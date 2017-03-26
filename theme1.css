@@ -1,0 +1,73 @@
+#inlineContent {
+	border-bottom-color: rgb(50, 50, 50);
+}
+#inlineContent, #searchBox, body, .hide {
+	background-color: rgb(10, 10, 10);
+}
+.status_selected {
+	background-color: rgb(26, 26, 26);
+}
+body {
+	color: rgb(255, 255, 255);
+}
+#searchBox, input[type=text] {
+	color: rgb(140, 1, 175);
+}
+#list_surround > table:first-of-type, #list_surround, input[type=text] {
+	background-color: rgb(50, 50, 50);
+}
+a {
+	color: rgb(182, 182, 182);
+}
+a:hover, #mal_cs_listinfo div a:hover, #mal_cs_links div a:hover, #mal_cs_otherlinks div a:hover {
+	color: rgb(255, 255, 255);
+}
+#list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):hover {
+	background-color: rgba(132, 0, 245, 0.2);
+}
+.hide {
+	box-shadow: 0px 0px 11px 2px rgb(13, 13, 13) inset;
+}
+::selection {
+	color: rgb(132, 0, 245);
+	background-color: rgb(110, 110, 110);
+}
+::-moz-selection {
+	color: rgb(132, 0, 245);
+	background-color: rgb(0, 0, 0);
+}
+#mal_cs_listinfo div a, #mal_cs_links div a, #mal_cs_otherlinks div a,
+.table_headerLink, .status_not_selected,
+.header_cw, .header_completed, .header_onhold,
+.header_dropped, .header_ptw,
+.category_totals, #grand_totals, #copyright {
+	background-color: rgb(26, 26, 26);
+	background-image: linear-gradient(top, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -o-linear-gradient(top, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -moz-linear-gradient(top, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -webkit-linear-gradient(top, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -ms-linear-gradient(top, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+}
+#mal_cs_listinfo div a:hover, #mal_cs_links div a:hover, #mal_cs_otherlinks div a:hover,
+.table_headerLink:hover, .status_not_selected:hover {
+	background-image: linear-gradient(bottom, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -o-linear-gradient(bottom, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -moz-linear-gradient(bottom, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+	background-image: -ms-linear-gradient(bottom, rgb(26, 26, 26) 40%, rgb(13, 13, 13) 60%);
+}
+.td1, .td2, .td1 a + small, .td2 a + small, .animetitle {
+	background-color: rgba(13, 13, 13, 0.9);
+	background: transparent linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -o-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -moz-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -webkit-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -ms-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+}
+.animetitle:hover {
+	background-image: linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -o-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -moz-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -ms-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+}
