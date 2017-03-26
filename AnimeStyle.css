@@ -1,0 +1,328 @@
+/*
+#inlineContent {
+	display: block !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 420px;
+	width: 100%;
+	background-position: right;
+	border-bottom-width: 42px;
+	border-bottom-style: solid;
+	z-index: -1;
+}
+*/
+
+.table_headerLink {
+	display: block;
+	padding: 4px 7px;
+	height: 15px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+body {
+	margin: auto !important;
+	width: 77%;
+	min-width: 726px;
+	max-width: 1452px;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url("https://raw.githubusercontent.com/shikyoh01/MyAnimeList/master/Background0.jpg") 50% 50% fixed transparent;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+#list_surround {
+	margin: 100px 0px 64px -31px;
+	padding: 11px 31px 42px 31px;
+	width: 100%;
+	border-radius: 42px;
+    text-align: center;
+}
+
+.header_cw, .header_completed, .header_onhold,
+.header_dropped, .header_ptw , body > div:first-of-type:before{
+	clear: both;
+	position: relative;
+	top: 31px;
+	margin: 0px 0px 42px 0px;
+	padding: 11px 0px;
+	border-radius: 13px;
+}
+
+.header_title {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw),
+.hide {
+	position: relative;
+	width: 221px;
+	height: 320px;
+	margin: 11px 0px 11px 11px;
+	border-radius: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw) {
+	z-index: 1;
+}
+
+.hide {
+	margin-left: -224px !important;
+	background-position: center 0px;
+    box-shadow: 0px 0px 11px 2px rgb(13, 13, 13) inset;
+    display: inline-block !important;
+}
+
+.td1, .td2 {
+	position: absolute;
+	padding: 4px 7px;
+	border-radius: 4px;
+}
+
+.td1:nth-of-type(2), .td2:nth-of-type(2) {
+    background: transparent !important;
+    height: 312px;
+    width: 206px;
+}
+
+.td1:first-of-type:before, .td2:first-of-type:before {
+	content: "#";
+}
+
+.td1:first-of-type, .td2:first-of-type {
+	top: 11px;
+	left: 11px;
+	width: auto;
+	z-index: 1;
+}
+
+.td1 a[title="Anime Information"] + small, .td2 a[title="Anime Information"] + small {
+	display: block;
+	visibility: visible;
+	position: absolute;
+	top: 11px;
+	left: 82px;
+	width: 43px;
+	padding: 4px 7px;
+	font-size: 11px;
+	text-align: center;
+	word-wrap: break-word;
+	border-radius: 4px;
+}
+
+.td1:nth-of-type(4)[width="50"], .td2:nth-of-type(4)[width="50"] {
+	top: 11px;
+	right: 11px;
+	width: 42px;
+}
+
+td[width="70"] + .td1:nth-of-type(5):before, [width="70"] + .td2:nth-of-type(5):before {
+	content: "Volumes: ";
+}
+
+td[width="70"] + .td1:nth-of-type(5), td[width="70"] + .td2:nth-of-type(5) {
+	top: 11px;
+	right: 11px;
+	width: auto;
+	text-align: right;
+}
+
+.td1 a:not([title="Anime Information"]) + small, .td2 a:not([title="Anime Information"]) + small {
+	display: block;
+	visibility: visible;
+	position: absolute;
+	top: 39px;
+	right: 11px;
+	width: auto;
+	padding: 4px 7px;
+	font-size: 11px;
+	text-align: right;
+	border-radius: 4px;
+}
+
+.animetitle {
+    border-radius: 4px;
+    bottom: 41px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    left: 11px;
+    overflow: hidden;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+    width: 184px;
+}
+
+.td1:nth-of-type(3):before, .td2:nth-of-type(3):before {
+	content: "Score: ";
+}
+
+.td1:nth-of-type(3), .td2:nth-of-type(3) {
+    bottom: 11px;
+    left: 11px;
+	width: auto;
+	text-align: left;
+}
+
+td[width="50"] + .td1:nth-of-type(5):before, [width="50"] + .td2:nth-of-type(5):before {
+	content: "Episodes: ";
+}
+
+td[width="50"] + .td1:nth-of-type(5), td[width="50"] + .td2:nth-of-type(5) {
+	right: 11px;
+	bottom: 11px;
+	width: auto;
+	text-align: right;
+}
+
+.td1:nth-of-type(4)[width="70"]:before, .td2:nth-of-type(4)[width="70"]:before {
+	content: "Chapters: ";
+}
+
+.td1:nth-of-type(4)[width="70"], .td2:nth-of-type(4)[width="70"] {
+	bottom: 11px;
+	right: 11px;
+	width: auto;
+	text-align: right;
+}
+
+.td1:nth-of-type(n+6), .td2:nth-of-type(n+6) {
+	display: none;
+}
+
+input[type=text] {
+	width: 100%;
+	text-align: right;
+	border: none;
+	border-radius: 4px;
+}
+
+input[value=Go] {
+	display: none;
+}
+
+#list_surround .List_LightBox {
+    bottom: 4px;
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    height: 320px;
+    left: 7px;
+    position: relative;
+    visibility: visible;
+    width: 220px;
+}
+
+.td1 div, .td2 div { 
+    visibility: collapse;
+}
+
+.category_totals {
+	text-align: center;
+	border-radius: 13px;
+    height: 320px;
+    padding: 0px 15px;
+}
+
+.category_totals:before {
+	display: block;
+	margin-bottom: 11px;
+	content: "Totals:";
+	font-weight: bold;
+}
+
+#grand_totals, #copyright {
+	clear: both;
+	position: relative;
+	top: 31px;
+	padding: 11px 0px;
+	text-align: center;
+}
+
+#grand_totals {
+	margin-bottom: 22px;
+	border-radius: 7px;
+}
+
+#copyright {
+	margin-top: 0px !important;
+	margin-bottom: 31px;
+	border-radius: 13px;
+}
+
+#list_surround > br {
+	display: none;
+}
+
+body, input[type=text] {
+	color: rgb(255, 255, 255);
+}
+#list_surround, input[type=text] {
+	background-color: rgba(52, 52, 52, 0.700);
+}
+a {
+	color: rgb(255, 255, 255);
+}
+a:hover {
+	color: rgb(255, 255, 255);
+}
+
+.table_headerLink, 
+.header_cw, .header_completed, .header_onhold,
+.header_dropped, .header_ptw,
+.category_totals, #grand_totals, #copyright, body > div:first-of-type:before {
+	background-color: rgba(26, 26, 26, 0.700);
+	background-image: linear-gradient(top, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -o-linear-gradient(top, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -moz-linear-gradient(top, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -webkit-linear-gradient(top, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -ms-linear-gradient(top, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+}
+
+.table_headerLink:hover {
+	background-image: linear-gradient(bottom, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -o-linear-gradient(bottom, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -moz-linear-gradient(bottom, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+	background-image: -ms-linear-gradient(bottom, rgba(26, 26, 26, 0.500) 40%, rgba(13, 13, 13, 0.500) 60%);
+}
+.td1, .td2, .td1 a + small, .td2 a + small, .animetitle {
+	background-color: rgba(13, 13, 13, 0.9);
+	background: transparent linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -o-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -moz-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -webkit-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background: transparent -ms-linear-gradient(top, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+}
+.animetitle:hover {
+	background-image: linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -o-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -moz-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+	background-image: -ms-linear-gradient(bottom, rgba(26, 26, 26, 0.9) 40%, rgba(13, 13, 13, 0.9) 60%);
+}
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	display: none !important;
+}
+
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+	display: none !important;
+}
